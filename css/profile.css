@@ -4,6 +4,9 @@ body {
   height: 100vh;
 }
 
+p {
+  color: var(--text-subtle-color);
+}
 .flex-container {
   display: flex;
   height: 100%;
@@ -15,13 +18,65 @@ textarea {
 }
 
 /* Left section */
-.left-section {
+.user-profile-container {
   flex: 1;
   padding: 20px;
-  border-right: 2px solid rgba(0, 0, 0, 0.5);
   display: flex;
   flex-direction: column;
   box-shadow: 0px 5px 10px 0px rgba(17, 12, 46, 0.09);
+  align-items: center;
+    margin-right: 20px;
+  }
+  
+  .profile-pic {
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .profile-pic img {
+    max-width: 100px;
+    min-width: 40px;
+  }
+  
+  .user-details p {
+    margin: 20px;
+    position: relative;
+  }
+  
+  .user-details p::after {
+    content: '';
+    /* Add content to the pseudo-element */
+    position: absolute;
+    /* Position the pseudo-element relative to its parent */
+    bottom: -5px;
+    /* Adjust the distance of the line from the bottom of the paragraph */
+    left: 0;
+    /* Align the line to the left edge of the paragraph */
+    width: 100%;
+    /* Make the line span the entire width of the paragraph */
+    height: 1px;
+    /* Set the height of the line */
+    background-color: #ccc;
+    /* Set the color of the line */
+  }
+  
+  .edit-btn button {
+    background-color: var(--button-color);
+    border-radius: 3px;
+    border-style: none;
+    width: 50px;
+    height: 25px;
+    color: var(--text-color);
+  }
+  
+  .edit-btn button:hover {
+    background-color: var(--active-color);
+    cursor: pointer;
+  }
+  
+  .user-profile-container div.edit-btn button {
+    align-items: start;
 }
 
 /* Right and Bottom section container */
@@ -33,25 +88,26 @@ textarea {
 }
 
 /* Right section */
-.right-section {
+.payment-mtd {
   flex: 1;
   padding: 20px;
-  border-bottom: 2px solid rgba(0, 0, 0, 0.5); /* Add bottom border */
   box-shadow: 0px 5px 10px 0px rgba(17, 12, 46, 0.09);
 }
 
 /* Bottom section */
 .bottom-section {
-  flex: 2;
+  flex: 1;
   padding: 20px;
 }
 
 .bottom-section h2, .bottom-section p {
   margin: 10px;
 }
+
 .right-section h2, .right-section p {
   margin: 10px;
 }
-.left-section h2, .left-section p {
+.payment-mtd h2,
+.payment-mtd p {
   margin: 10px;
 }

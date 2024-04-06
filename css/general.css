@@ -5,6 +5,7 @@
   --active-color: #0066ff;
   --secondary-background: rgba(29, 29, 31,0.7);
   --text-color: white;
+  --text-subtle-color: rgba(0, 0, 0, 0.7);
 }
 
 * {
@@ -97,7 +98,7 @@ nav ul a:hover{
 
 /* footer */
 footer {
-  color: white;
+  color: black;
   grid-area: footer;
   grid-column: 1/4;
   font-size: 12px;
@@ -110,5 +111,5 @@ footer {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  background: var(--secondary-background);
+  background-color: white;
 }

@@ -85,6 +85,7 @@ input[type="submit"] {
   font-weight: bold;
   padding: 0.5em 1em;
   border-radius: 5px; 
+  border-style: none;
 }
 
 form .ticket-btn{
@@ -93,6 +94,10 @@ form .ticket-btn{
   align-items: center;
 }
 
+form .ticket-btn input:hover {
+  background-color: var(--active-color);
+  cursor: pointer;
+}
 .container {
   padding: 0.9rem;
   border-radius: 3px;
