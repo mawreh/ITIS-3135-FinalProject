@@ -6,6 +6,7 @@
   <title>User Profile</title>
   <link rel="stylesheet" href="../css/profile.css">
   <link rel="stylesheet" href="../css/general.css">
+  <script src="js/profile.js" defer></script>
 </head>
   <!-- ============================== header =========================== -->
   <header class="navigation">
@@ -33,16 +34,19 @@
     <div class="user-profile-container">
       <h2>User Profile</h2>
       <div class="user-details">
+
         <div class="profile-pic">
-          <img src="img/default-profile.png" alt="user profile picture">
+          <img id="profile-pic" src="img/default-profile.png" alt="user profile picture">
+          <input type="file" id="profile-pic-upload" accept="image/*" style="display: none;">
         </div>
+      
         <p><strong>Full Name:</strong> example</p>
         <p><strong>Email:</strong> example@example.com</p>
         <p><strong>Phone:</strong> +1 123-456-7890</p>
         <p><strong>Address:</strong> Bay Area, San Francisco, CA</p>
       </div>
       <div class="edit-btn">
-        <button type="submit">Edit</button>
+        <button id="edit-button" type="submit">Edit</button>
       </div>
     </div>
 

@@ -25,18 +25,34 @@ textarea {
   flex-direction: column;
   box-shadow: 0px 5px 10px 0px rgba(17, 12, 46, 0.09);
   align-items: center;
-    margin-right: 20px;
+  margin-right: 20px;
   }
-  
+
+/* Position the upload button below the profile picture */
   .profile-pic {
-    text-align: center;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+      width: 150px;
+        /* Set the width to your desired size */
+        height: 150px;
+        /* Set the height to your desired size */
+        overflow: hidden;
+        /* Hide any overflow from the profile picture */
+        border-radius: 50%;
+        /* Make it a circle */
+        margin-top: 20px;
+        margin-bottom: 40px;
+      }
+      
+      .profile-pic:hover {
+        cursor: pointer;
   }
   
   .profile-pic img {
-    max-width: 100px;
-    min-width: 40px;
+    width: 100%;
+      /* Make the image fill the container */
+      height: 100%;
+      /* Make the image fill the container */
+      object-fit: cover;
+      /* Maintain aspect ratio and cover the container */
   }
   
   .user-details p {
