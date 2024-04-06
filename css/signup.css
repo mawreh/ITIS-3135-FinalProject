@@ -1,0 +1,88 @@
+/* Title */
+h1 {
+  text-align: center;
+  letter-spacing: 0.7px;
+  font-weight: 700;
+}
+
+/* Main content */
+main {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+/* Form title */
+form h3 {
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 42px;
+  text-align: center;
+}
+
+/* Login Form */
+.signup-form {
+  height: 520px;
+  width: 400px;
+  margin: auto;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 40px rgba(8, 7, 16, 0.4);
+  padding: 50px 35px;
+  background-color: rgba(255, 255, 255, 0.25);
+  letter-spacing: 0.5px;
+  flex-basis: 300px;
+  flex-grow: 1;
+}
+
+/* Form elements */
+.signup-form label {
+  display: block;
+  margin-top: 30px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/* Login Button */
+.signup-btn button {
+  color: white;
+  font-size: 20px;
+  display: block;
+  height: 50px;
+  width: 100%;
+  margin-top: 25px;
+  background-color: var(--button-color);
+  border-radius: 3px;
+}
+
+.signup-btn button:hover {
+  background-color: var(--active-color);
+  cursor: pointer;
+}
+
+/* Signup Button */
+.signup-section button {
+  display: block;
+  height: 50px;
+  width: 100%;
+  background-color: var(--secondary-background);
+  border: none;
+  border-radius: 3px;
+  color: white;
+}
+
+.signin-section {
+  margin-top: 10px;
+}
+
+.signin-section a {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.signin-section a:hover {
+  color: rgba(0, 0, 0, 1);
+  cursor: pointer;
+}
+

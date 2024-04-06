@@ -1,0 +1,139 @@
+/* heading */
+.heading {
+  background-color: var(--primary-color);
+  color: white; /* Set text color to white or any other suitable color */
+  padding: 10px;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.heading h2 {
+  margin: 0;
+}
+
+body{
+  min-height: 100vh;
+  line-height: 1.5;
+
+}
+
+input,
+textarea {
+  font: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+.font-sm {
+  font-size: 0.8rem;
+}
+
+.right-indent{
+  padding-left: 1em;
+}
+
+.center-text {
+  text-align: center;
+}
+
+body {
+  display: grid; 
+  grid-template-rows: 6rem 1fr 3rem;
+  grid-template-columns: 10% 80% 10%;
+  grid-template-areas:
+  "header header header"
+  "main main main"
+  "footer footer footer"
+  ;
+}
+
+h2 {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea{
+border: 2px solid  var(--primary-color);
+margin-bottom: 0.5em;
+width: 100%;
+padding: 0.6em;
+
+}
+
+textarea {
+  height: 10em;
+}
+
+
+input[type="submit"] {
+  background-color: var(--primary-color);
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: bold;
+  padding: 0.5em 1em;
+  border-radius: 5px; 
+}
+
+form .ticket-btn{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  padding: 0.9rem;
+  border-radius: 3px;
+  box-shadow: 0px 5px 10px 0px rgba(17, 12, 46, 0.09);
+  height: 550px;
+}
+.container, .contact-info{
+  flex-basis: 300px;
+  flex-grow: 1;
+  max-width: 500px;
+}
+
+main {
+  grid-area: main;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  background-color: white;
+  margin-top: -3rem;
+}
+
+/* ====================== contact-info ======================= */
+.contact-info {
+  height: auto;
+  width: 100%;
+  text-align: start;
+  box-shadow: 0px 5px 10px 0px rgba(17, 12, 46, 0.09);
+  border-radius: 3px;
+  height: 550px;
+}
+
+.contact-info h3, .contact-info h4{
+  padding: 10px;
+  margin: 10px;
+}
+.contact-info p, .contact-info a{
+  padding: 10px;
+  margin: 10px;
+  
+}
+
+
+

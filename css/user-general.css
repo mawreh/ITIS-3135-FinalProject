@@ -1,0 +1,122 @@
+:root {
+  --primary-color: rgb(17, 123, 245);
+  --background-color: rgba(  17, 123, 245, 0.75);
+  --button-color: #2D7AF1;
+  --active-color: #0066ff;
+  --secondary-background: rgba(29, 29, 31,0.9);
+  --text-color: black;
+}
+
+* {
+  font-family: sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+/* company logo */
+.company-logo {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.company-logo img {
+  max-width: 100px;
+}
+
+::placeholder {
+  color: var(--text-color);
+  opacity: 50%;
+}
+
+form *{
+  color: var(--text-color);
+  outline: none;
+  border: none;
+  letter-spacing: 0.5px;
+  z-index: 1;
+}
+
+/* input layout */
+input {
+  display: block;
+  height: 50px;
+  width: 95%;
+  background-color: rgba(0, 0, 0, 0.09);
+  border-radius: 5px;
+  padding: 0 10px;
+  margin-top: 30px;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+
+header {
+  position: fixed;
+  top: 5;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  width: 100%;
+  text-align: center;
+}
+
+header img {
+  height: 70px;
+}
+
+
+/* making a square */
+
+/* .square {
+  width: 700px;
+  height: 700px;
+  background: linear-gradient(315deg, #01B2FF, #012FFF);
+  border-radius: 60px;
+  z-index: 0;
+  transform: rotate(55deg);
+  margin-top: 150px;
+  margin-left: 1290px;
+  position: fixed;
+}
+
+.anotherquare {
+  width: 700px;
+  height: 700px;
+  background: linear-gradient(315deg, #01B2FF, #012FFF);
+  border-radius: 60px;
+  z-index: 0;
+  position: fixed;
+  transform: rotate(145deg);
+  margin: 0 -350px;
+} */
+
+/* making a square */
+.square,
+.anotherquare {
+  width: 700px;
+  height: 700px;
+  background: linear-gradient(315deg, #01B2FF, #012FFF);
+  border-radius: 60px;
+  z-index: 0;
+  position: fixed;
+}
+
+/* right square */
+.square {
+  top: 300px;
+  left: calc(40% + 630px); /* Adjust as needed */
+  transform: rotate(145deg);
+}
+
+/* left square */
+.anotherquare {
+  top: calc(50% - 350px); /* Adjust as needed */
+  left: calc(50% - 1150px); /* Adjust as needed */
+  transform: rotate(125deg);
+}

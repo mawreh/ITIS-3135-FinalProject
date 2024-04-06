@@ -1,0 +1,111 @@
+/* Title */
+h1 {
+  text-align: center;
+  letter-spacing: 0.7px;
+  font-weight: 700;
+}
+
+/* Main content */
+main {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+/* Form title */
+form h3 {
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 42px;
+  text-align: center;
+}
+
+/* Login Form */
+.login-form {
+  height: 520px;
+  width: 400px;
+  margin: auto;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 40px rgba(8, 7, 16, 0.4);
+  padding: 50px 35px;
+  background-color: rgba(255, 255, 255, 0.25);
+  letter-spacing: 0.5px;
+  flex-basis: 300px;
+  flex-grow: 1;
+}
+
+/* Form elements */
+.login-form label {
+  display: block;
+  margin-top: 30px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/* Login Button */
+.login-btn button {
+  color: white;
+  display: block;
+  height: 50px;
+  width: 100%;
+  margin-top: 25px;
+  background-color: var(--button-color);
+  border-radius: 3px;
+}
+
+.login-btn button:hover {
+  background-color: var(--active-color);
+  cursor: pointer;
+}
+
+/* Signup Button */
+.signup-section button {
+  display: block;
+  height: 50px;
+  width: 100%;
+  background-color: var(--secondary-background);
+  border: none;
+  border-radius: 3px;
+  color: white;
+}
+
+.signup-section a {
+  text-decoration: none;
+}
+
+.signup-section button:hover {
+  background-color: rgba(0, 0, 0, 0.85);
+  cursor: pointer;
+}
+
+/* Remember Me Checkbox */
+.remember-me label,
+.remember-me input {
+  display: inline;
+  margin-top: 30px;
+  margin-bottom: 5px;
+}
+
+.remember-me input[type="checkbox"] {
+  flex-shrink: 0; /* prevent checkbox from shrinking */
+  width: 16px;
+  height: 16px;
+}
+
+/* Or Signup Section */
+h3 {
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 15px;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+/* Submission Button Font */
+.login-btn button,
+.signup-section button {
+  font-size: 20px;
+}

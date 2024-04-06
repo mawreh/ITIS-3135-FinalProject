@@ -1,0 +1,67 @@
+/* grid layout */
+body {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 10% 80% 10%;
+  grid-template-areas:
+  "header header header"
+  "main main main"
+  "footer footer footer"
+  ;
+  height: 100vh;
+}
+/*======================= main content ======================= */
+main {
+  grid-area: main;
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* columns for intro and illustration */
+  gap: 20px;
+  align-items: flex-start;
+  min-height: 100vh;
+}
+
+main .intro {
+  padding: 50px;
+  order: 1;
+  height: 100%;
+  text-align: start;
+  padding-top: 400px;
+  align-self: start; /* Align intro to the start (top) */
+}
+
+main .illustration {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  order: 2;
+  align-self: end; /* Align illustration to the end (bottom) */
+}
+
+main .illustration img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+main p {
+  padding-top: 10px;
+  font-size: 20px;
+}
+
+main .intro input {
+  padding: 1em;
+  margin: auto;
+  text-decoration: none;
+  margin-top: 10px;
+  border-style: none;
+  border-radius: 3px;
+  background-color: blue;
+  height: 50px; /* Set the height of the button */
+  width: 120px; /* Set the width of the button */
+  color: white;
+  font-size: 16px;
+}
+
+main .intro input:hover {
+  background-color: var(--active-color);
+  cursor: pointer;
+}
