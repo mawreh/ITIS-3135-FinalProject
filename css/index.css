@@ -66,3 +66,48 @@ main .intro input:hover {
   background-color: var(--active-color);
   cursor: pointer;
 }
+
+/* carousel container */
+.carousel-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-column: 1/span 3;
+  height: 100vh;
+}
+
+.carousel {
+  position: relative;
+}
+
+.slides {
+  display: flex;
+  overflow: hidden;
+}
+
+.slides img {
+  width: 100%;
+  height: auto;
+}
+
+.prev-btn,
+.next-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 18px;
+  z-index: 1;
+}
+
+.prev-btn {
+  left: 0;
+}
+
+.next-btn {
+  right: 0;
+}
