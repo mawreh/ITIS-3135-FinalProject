@@ -15,8 +15,27 @@ p {
 input,
 textarea {
   font: inherit;
+  color: rgba(0, 0, 0, 0.9);
+    padding: 5px 5px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  textarea {
+    border: none;
+    margin-bottom: 1em;
+    width: 100%;
+    overflow: visible;
+    padding-top: 0.5em;
+    word-wrap: break-word;
+    line-height: 2rem;
 }
 
+.editable {
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+}
 /* Left section */
 .user-profile-container {
   flex: 1;
@@ -26,6 +45,7 @@ textarea {
   box-shadow: 0px 5px 10px 0px rgba(17, 12, 46, 0.09);
   align-items: center;
   margin-right: 20px;
+  text-align: start;
   }
 
 /* Position the upload button below the profile picture */
@@ -38,8 +58,8 @@ textarea {
         /* Hide any overflow from the profile picture */
         border-radius: 50%;
         /* Make it a circle */
+        margin: 0 auto;
         margin-top: 20px;
-        margin-bottom: 40px;
       }
       
       .profile-pic:hover {

@@ -22,7 +22,7 @@
       <li class="search-container">
         <input type="text" name="search" id="search" placeholder="search">
       </li>
-      <li><a class="login-btn" href="#">account</a></li>
+      <li><a class="login-btn" href="profile.html">account</a></li>
       <li><a class="logout-btn" href="index.html">log out</a></li>
     </ul>
     </nav>
@@ -39,11 +39,10 @@
           <img id="profile-pic" src="img/default-profile.png" alt="user profile picture">
           <input type="file" id="profile-pic-upload" accept="image/*" style="display: none;">
         </div>
-      
-        <p><strong>Full Name:</strong> example</p>
-        <p><strong>Email:</strong> example@example.com</p>
-        <p><strong>Phone:</strong> +1 123-456-7890</p>
-        <p><strong>Address:</strong> Bay Area, San Francisco, CA</p>
+        <p><strong>Full Name:</strong> <input type="text" id="full-name" value="example" readonly></p>
+        <p><strong>Email:</strong> <input type="email" id="email" value="example@example.com" readonly></p>
+        <p><strong>Phone:</strong> <input type="tel" id="phone" value="+1 123-456-7890" readonly></p>
+        <p><strong>Address:</strong> <input type="text" id="address" value="Bay Area, San Francisco, CA" readonly></p>
       </div>
       <div class="edit-btn">
         <button id="edit-button" type="submit">Edit</button>
