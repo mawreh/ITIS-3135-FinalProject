@@ -31,15 +31,10 @@ header{
   white-space: nowrap;
 }
 
-header div.logo img {
-  max-width: 150px;
-  justify-content: start;
-}
-
 /*======================= header ======================= */
 
 /* navigation bar container */
-header nav ul{
+header div.navigation nav ul {
   display: flex;
   list-style-type: none;
   align-items: center;
@@ -47,24 +42,24 @@ header nav ul{
   font-size: 20px;
   font-weight: 500;
   margin: 0 auto;
+  padding: 0;
     /* center the navigation horizontally */
 }
 
+.search-container {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
 .search-container #search{
   border: none;
   height: 20px;
   border-radius: 3px;
   padding: 5px;
-  text-align: start;
   min-width: 100px;
+  margin: 0 auto;
+    font-size: 20px;
 }
-
-.search-container i {
-  border: none;
-  padding: 2px 2px;
-  background-color: transparent;
-}
-
 
 /* navigation link styling */
 nav ul a {
@@ -92,12 +87,6 @@ nav ul a:hover{
   color: white;
 }
 
-.search-container {
-  /* height: 35; */
-    display: flex;
-    align-items: center;
-    margin-left: auto;
-}
 
 /*======================= footer ======================= */
 

@@ -19,8 +19,6 @@
 
 body{
   min-height: 100vh;
-  line-height: 1.5;
-
 }
 
 input,
@@ -94,7 +92,7 @@ form .ticket-btn{
   align-items: center;
 }
 
-form .ticket-btn input:hover {
+form .ticket-btn:hover input {
   background-color: var(--active-color);
   cursor: pointer;
 }
@@ -119,7 +117,6 @@ main {
   background-color: white;
   margin-top: -3rem;
 }
-
 /* ====================== contact-info ======================= */
 .contact-info {
   height: auto;
