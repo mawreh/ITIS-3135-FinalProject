@@ -91,7 +91,6 @@ main .intro input:hover {
 
   /* set opacity to 0 for images that arent active */
   opacity: 0;
-
   /* transition */
   transition: 300ms opacity ease-in-out;
   transition-delay: 300ms;
@@ -109,6 +108,7 @@ main .intro input:hover {
   height: 100%;
     object-fit: cover;
     object-position: center;
+    border-radius: 10px;
 }
 /* carousel buttons */
     
@@ -124,14 +124,37 @@ main .intro input:hover {
     height: 5rem;
     border-radius: 3px;
   }
-        .carousel-btn.left {
-          left: -4.5rem;
-        }
+.carousel-btn.left {
+  left: -4.5rem;
+}
     
-        .carousel-btn.right {
-          right: -4.5rem;
-        }
-        .carousel-btn:hover {
-          cursor: pointer;
-          color: var(--active-color);
-        }
+.carousel-btn.right {
+  right: -4.5rem;
+}
+
+.carousel-btn:hover {
+  cursor: pointer;
+  color: var(--active-color);
+}
+.carousel li p {
+  color: white;
+  margin: 0 auto;
+  text-align: center;
+  font-style: italic;
+  font-size: 50px;
+  font-weight: 800;
+  height: auto;
+  transform: translateY(-150%);
+  width: 80%;
+  min-width: 40%;
+  max-width: 80%;
+}
+
+.carousel li:nth-child(5) p {
+  font-size: 70px;
+}
+
+.carousel li:nth-child(2) p {
+  font-size: 60px;
+  color: rgba(255, 255, 255, 0.9);
+}
