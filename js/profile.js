@@ -78,15 +78,13 @@ document.addEventListener('DOMContentLoaded', function() {
       phoneInput.classList.remove('editable');
       addressInput.classList.remove('editable');
 
-      // Save the updated information (you can implement this part)
+      // Save the updated information 
       saveUserInfo(fullNameInput.value, emailInput.value, phoneInput.value, addressInput.value);
     }
   });
 
   // Function to save the updated user information
   function saveUserInfo(fullName, email, phone, address) {
-    // You can implement the code to save the updated information here
-    // For example, you can make an AJAX request to update the user's information in the database
     console.log('Saving updated information:');
     console.log('Full Name:', fullName);
     console.log('Email:', email);

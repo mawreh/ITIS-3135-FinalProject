@@ -49,13 +49,9 @@ textarea {
 /* Position the upload button below the profile picture */
   .profile-pic {
       width: 150px;
-        /* Set the width to your desired size */
         height: 150px;
-        /* Set the height to your desired size */
         overflow: hidden;
-        /* Hide any overflow from the profile picture */
         border-radius: 50%;
-        /* Make it a circle */
         margin: 0 auto;
         margin-top: 20px;
       }
